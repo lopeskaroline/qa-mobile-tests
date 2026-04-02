@@ -1,0 +1,44 @@
+{
+  "validUsers": [
+    {
+      "email": "teste1@qa.com",
+      "password": "Test@1234"
+    },
+    {
+      "email": "teste2@qa.com",
+      "password": "Test@1234"
+    }
+  ],
+  "invalidLoginUsers": [
+    {
+      "email": "email-invalido",
+      "password": "Test@1234",
+      "expectedMessage": "Please enter a valid email address"
+    },
+    {
+      "email": "teste@qa.com",
+      "password": "",
+      "expectedMessage": "Please enter at least 8 characters"
+    }
+  ],
+  "validSignUpUsers": [
+    {
+      "email": "novo1@qa.com",
+      "password": "Test@1234",
+      "confirmPassword": "Test@1234"
+    },
+    {
+      "email": "novo2@qa.com",
+      "password": "Test@1234",
+      "confirmPassword": "Test@1234"
+    }
+  ],
+  "invalidSignUpUsers": [
+    {
+      "email": "novo3@qa.com",
+      "password": "Test@1234",
+      "confirmPassword": "SenhaErrada@123",
+      "expectedMessage": "Please enter the same password"
+    }
+  ]
+}

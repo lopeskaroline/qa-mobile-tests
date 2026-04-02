@@ -1,0 +1,5 @@
+app/*.apk
+allure-report/
+allure-results/
+errorShots/
+node_modules/
